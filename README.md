@@ -1,6 +1,7 @@
 # session_analysis
 
-Geospatial and Temporal Analysis of taxi traffic data in the city of New York
+Geospatial and Temporal Analysis of taxi traffic data in the city of New York     
+
 	- aiming to improve each taxi's utilization rate
 	- meet the requirement of being at the right time at the dispach center, on shift change, 
 	  despite the traffic happening at specific times in a region daily, or other planned
