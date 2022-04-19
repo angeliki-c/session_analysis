@@ -38,34 +38,34 @@ Data set
 Challenges
 
 	In this use case, we aim to quantify the factors that affect the utilization time of each taxi. Towards
-    this purpose, we are going to compute the average time for a taxi to find its next fare as a function of
+	this purpose, we are going to compute the average time for a taxi to find its next fare as a function of
 	the borough in which it dropped its passengers off [3]. For this computation, geospatial and temporal 
 	data procesing is going to take place. This involves processing dates, times, longitude/latitude and
 	geospatial boundaries, analyzing vectors at scale (working with polygons, lines, points etc) and others.
-    As this information, coming from two seperate domains in commercial applications, time and space, has 
+	As this information, coming from two seperate domains in commercial applications, time and space, has 
 	its own intricacies, appropriate libraries need to be developed and used in place to simplify information
-	management and the management of complexities innate to space and time domain, such the diversity in various,
-    formats, diversity of systems of reference (coordinate systems, calendars etc), reliability of information
-    (accuracy of geographical information) and others. Hopefully, a wide range of libraries has been developed
-    for this purpose. Here [2] is a quite informed report on some of the challenges faced in geospatial data 
-	processing and on some usefull libraries and tools that have been developed in this field. In this case
-	study Apache-Sedona [5] and Geospark [6] have been used for data processing and visualization and PySpark [7]
-	for the time and data overall analysis.
+	management and the management of complexities innate to space and time domain, such the diversity in 
+	various, formats, diversity of systems of reference (coordinate systems, calendars etc), reliability of
+	information (accuracy of geographical information) and others. Hopefully, a wide range of libraries has 
+	been developed for this purpose. Here [2] is a quite informed report on some of the challenges faced in 
+	geospatial data processing and on some usefull libraries and tools that have been developed in this field. 
+	In this case study Apache-Sedona [5] and Geospark [6] have been used for data processing and visualization 
+	and PySpark [7] for the time and data overall analysis.
 	
 	The data set with the taxi fares is of great volume and our analysis involves multiple combinations of two,
-	on average,	datasets, as well as processing geospatial information, which ofthen involves computations including
-	big vectors, such as the information about boroughs' geometry, so we shall have to take care of the available
-	resources that may be needed for carrying out the analysis. This use case has been tested on a standalone 
-	Spark cluster. Spark is very powerful in running applications using big data sets, even under limited resources
-	on a standard labtop, by following good practicies, such as caching appropriately the data, using broadcast joins 
-	when small datasets are involved in joins, choosing the number of workers so that the computations take full 
-	advantage of your resources and others.
+	on average, datasets, as well as processing geospatial information, which ofthen involves computations 
+	including big vectors, such as the information about boroughs' geometry, so we shall have to take care of 
+	the available resources that may be needed for carrying out the analysis. This use case has been tested on 
+	a standalone Spark cluster. Spark is very powerful in running applications using big data sets, even under 
+	limited resources on a standard labtop, by following good practicies, such as caching appropriately the data,
+	using broadcast joins when small datasets are involved in joins, choosing the number of workers so that the
+	computations take full advantage of your resources and others.
 	
-	This particular type of analysis that involves the extraction of insights about an area of our interest given a 
-	series of events over time that manifests it is ofthen called sessionization and it is often applied to various 
-	logs' analysis. Despite its usefullness, it comes with great cost for its execution, as the data is spread across
-	rdd partitions and for its implementation extensive reshuffling of data is required. Spark 2.0 has brough some 
-	optimizations for reducing the cost of sessionization operations.
+	This particular type of analysis that involves the extraction of insights about an area of our interest given
+	a series of events over time that manifests it is ofthen called sessionization and it is often applied to 
+	various logs' analysis. Despite its usefullness, it comes with great cost for its execution, as the data is
+	spread across rdd partitions and for its implementation extensive reshuffling of data is required. Spark 2.0 
+	has brough some optimizations for reducing the cost of sessionization operations.
 
 
  
