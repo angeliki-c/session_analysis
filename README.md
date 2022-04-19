@@ -74,14 +74,14 @@ Code
 	geospatial_and_temporal_analysis.py
    
    	All can be run interactively with pyspark shell or by submitting e.g. 
-		exec(open("project/location/session_analysis/geospatial_and_temporal_analysis.py").read()) for an all
-	at once execution.     
-	The code has been tested on a Spark standalone cluster. For the Spark setting, spark-3.1.2-bin-hadoop2.7 bundle
-	has been used. The external python packages that are used in this implementation exist in the requirements.txt
-	file. Install with:      
+		exec(open("project/location/session_analysis/geospatial_and_temporal_analysis.py").read()) 
+	for an all at once execution.     
+	The code has been tested on a Spark standalone cluster. For the Spark setting, spark-3.1.2-bin-hadoop2.7 
+	bundle has been used. The external python packages that are used in this implementation exist in the 
+	requirements.txt file. Install with:      
 	    	pip install -r project/location/session_analysis/requirements.txt    
-    	This use case is inspired from the series of experiments presented in [8], though it deviates from it, in the
-    	programming language, the setting used and in the analysis followed.
+    	This use case is inspired from the series of experiments presented in [8], though it deviates from it, in
+	the programming language, the setting used and in the analysis followed.
 
 
 
