@@ -7,12 +7,12 @@
 	- meet the requirement of being at the right time at the dispach center, on shift change, 
 	  despite the traffic happening at specific times in a region daily, or other planned
 	  factors that obstruct normal circulation of vehicles, for effective trip management by 
-          taxi drivers and vehicles' management by taxi vendors
-    
-    	There are many useful applications one can think of in this use case given the povided data.
-    	Here, taking inspiration by [8], the relation between the dropoff point and the duration in minutes
-    	that passes from the last dropoff of a passenger, until the pickup of the next client, is investigated.
-    	This serves as a good indicator for the utilization statistic, which is usefull for the taxi business. 	
+	  taxi drivers and vehicles' management by taxi vendors
+	  
+	There are many useful applications one can think of in this use case given the povided data.
+	Here, taking inspiration by [8], the relation between the dropoff point and the duration in minutes
+	that passes from the last dropoff of a passenger, until the pickup of the next client, is investigated.
+	This serves as a good indicator for the utilization statistic, which is usefull for the taxi business. 	
  
  
  
@@ -21,8 +21,8 @@ Techniques followed
 	Data preprocessing for cleaning the data set, with the taxi pickup and dropoff points, pickup and dropoff 
 	datetimes and driver ids of one month for a city. Geospatial and time processing of the data in combination
 	with a second data set, containing purely geographical information. Computation of the time duration between
-	the last and the next fare and the next pickup borough. The last step of the analysis involves the presentation 
-	of the results on a heatmap diagram.
+	the last and the next fare and the next pickup borough. The last step of the analysis involves the presenta-
+	tion of the results on a heatmap diagram.
 
 
   
