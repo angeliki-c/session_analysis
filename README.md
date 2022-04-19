@@ -1,12 +1,11 @@
 # session_analysis
 
-
-	Geospatial and Temporal Analysis of taxi traffic data in the city of New York
-    		- aiming to improve each taxi's utilization rate
-		- meet the requirement of being at the right time at the dispach center, on shift change, 
-	  	  despite the traffic happening at specific times in a region daily, or other planned
-	          factors that obstruct normal circulation of vehicles, for effective trip management by 
-      		  taxi drivers and vehicles' management by taxi vendors
+Geospatial and Temporal Analysis of taxi traffic data in the city of New York
+	- aiming to improve each taxi's utilization rate
+	- meet the requirement of being at the right time at the dispach center, on shift change, 
+	  despite the traffic happening at specific times in a region daily, or other planned
+	  factors that obstruct normal circulation of vehicles, for effective trip management by 
+          taxi drivers and vehicles' management by taxi vendors
     
     	There are many useful applications one can think of in this use case given the povided data.
     	Here, taking inspiration by [8], the relation between the dropoff point and the duration in minutes
