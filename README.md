@@ -61,37 +61,36 @@ Challenges
 	using broadcast joins when small datasets are involved in joins, choosing the number of workers so that the
 	computations take full advantage of your resources and others.
 	
-	This particular type of analysis that involves the extraction of insights about an area of our interest given
-	a series of events over time that manifests it is ofthen called sessionization and it is often applied to 
-	various logs' analysis. Despite its usefullness, it comes with great cost for its execution, as the data is
-	spread across rdd partitions and for its implementation extensive reshuffling of data is required. Spark 2.0 
-	has brough some optimizations for reducing the cost of sessionization operations.
+	This particular type of analysis that involves the extraction of insights about an area of our interest 
+	given a series of events over time that manifests it is ofthen called sessionization and it is often applied 
+	to various logs' analysis. Despite its usefullness, it comes with great cost for its execution, as the data 
+	is spread across rdd partitions and for its implementation extensive reshuffling of data is required. Spark 
+	2.0 has brough some optimizations for reducing the cost of sessionization operations.
 
 
  
 Code
 
-    geospatial_and_temporal_analysis.py
+	geospatial_and_temporal_analysis.py
    
-    
-	All can be run interactively with pyspark shell or by submitting e.g. 
-	exec(open("project/location/session_analysis/geospatial_and_temporal_analysis.py").read()) for an all at once execution.
-	The code has been tested on a Spark standalone cluster. For the Spark setting, spark-3.1.2-bin-hadoop2.7 bundle has 
-	been used. The external python packages that are used in this implementation exist in the requirements.txt file. 
-	Install with: 
-	    pip install -r project/location/session_analysis/requirements.txt
-    This use case is inspired from the series of experiments presented in [8], though it deviates from it, in the
-    programming language, the setting used and in the analysis followed.
+   	All can be run interactively with pyspark shell or by submitting e.g. 
+		exec(open("project/location/session_analysis/geospatial_and_temporal_analysis.py").read()) for an all
+	at once execution.     
+	The code has been tested on a Spark standalone cluster. For the Spark setting, spark-3.1.2-bin-hadoop2.7 bundle
+	has been used. The external python packages that are used in this implementation exist in the requirements.txt
+	file. Install with:      
+	    	pip install -r project/location/session_analysis/requirements.txt    
+    	This use case is inspired from the series of experiments presented in [8], though it deviates from it, in the
+    	programming language, the setting used and in the analysis followed.
 
 
 
 References
 
 	1. Brian Donovan and Daniel B. Work “New York City Taxi Trip Data (2010-2013)”. 1.0. University
-       of Illinois at Urbana-Champaign. Dataset. http://dx.doi.org/10.13012/J8PN93H8, 2014.
+       	   of Illinois at Urbana-Champaign. Dataset. http://dx.doi.org/10.13012/J8PN93H8, 2014.
 	2. https://databricks.com/blog/2019/12/05/processing-geospatial-data-at-scale-with-databricks.html  
 	3. https://data.cityofnewyork.us/Transportation/NYC-Taxi-Zones/d3c5-ddgc
-	
 	4. https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm
 	5. https://sedona.apache.org/
 	6. https://geopandas.org/
