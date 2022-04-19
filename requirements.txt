@@ -1,0 +1,11 @@
+numpy
+pandas
+sklearn
+mlflow
+hyperopt
+matpltotlib.pyplot
+attrs
+shapely
+apache-sedona      #pip install --no-deps apache-sedona
+geopandas
+mapclassify
