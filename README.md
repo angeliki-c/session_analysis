@@ -80,7 +80,7 @@ Code
 	bundle has been used. The external python packages that are used in this implementation exist in the 
 	requirements.txt file. Install with:      
 	    	pip install -r project/location/session_analysis/requirements.txt    
-    	This use case is inspired from the series of experiments presented in [8], though it deviates from it, in
+	This use case is inspired from the series of experiments presented in [8], though it deviates from it, in
 	the programming language, the setting used and in the analysis followed.
 
 
